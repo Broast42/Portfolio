@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/styles.scss'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -9,7 +9,7 @@ function App() {
 
   useEffect(()=>{
     axios
-      .get(`https://api.github.com/users/Broast42`)
+      .get(`https://api.github.com/users/Broast42/repos`)
       .then(res=>{
         setFetch(res)
       })
@@ -20,7 +20,9 @@ function App() {
   console.log(fetch)
   return (
     <div className="App">
-      test
+      <img src="https://ghchart.rshah.org/Broast42" alt="Broast42's Github chart" />
+      <div className="">Test text to test some stuff</div>
+      
     </div>
   );
 }
