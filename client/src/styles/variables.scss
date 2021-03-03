@@ -1,0 +1,52 @@
+// font types
+$font-girl: 'Indie Flower', cursive;
+$font-serif: 'Old Standard TT', serif;
+$font-retro: 'Orbitron', sans-serif;
+$font-boy: 'Permanent Marker', cursive;
+$font-sharp: 'Reggae One', cursive;
+$font-sans: 'Roboto', sans-serif;
+
+//font sizes
+$text-xsmall: 1rem;
+$text-small: 1.4rem;
+$text-norm: 1.6rem;
+$text-medium: 2rem;
+$text-large: 2.5rem;
+$text-xlarge: 3rem;
+$text-xxlarge: 4rem;
+$text-xxxlarge: 5rem;
+
+//color schemes
+
+//retro
+$retro-dark: #222629;
+$retro-neutral: #474b4f;
+$retro-light: #6b6e70;
+$retro-primary: #86c232;
+$retro-secondary: #61892f;
+
+//boy
+$boy-dark: #5680E9;
+$boy-neutral: #474b4f;
+$boy-light: #c1c8e4;
+$boy-primary: #5ab9ea;
+$boy-secondary: #84ceeb;
+
+//girl 
+$girl-dark: #e64398;
+$girl-neutral: #a1c3d1;
+$girl-light: #f0ebf4;
+$girl-primary: #f172a1;
+$girl-secondary: #b39bc8;
+
+//modern
+$modern-dark: #25274d;
+$modern-neutral: #464866;
+$modern-light: #aaabb8;
+$modern-primary: #2e9cca;
+$modern-secondary: #29648a;
+
+//break points
+$small-pc: 900px;
+$tablet: 768px;
+$phone: 400px;
