@@ -1,4 +1,5 @@
 import './styles/styles.scss'
+import BioBox from './components/HomePage/BioBox';
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -9,20 +10,23 @@ function App() {
 
   useEffect(()=>{
     axios
-      .get(`https://api.github.com/users/Broast42/repos`)
+      .get(`https://api.github.com/users/Broast42`)
       .then(res=>{
-        setFetch(res)
+        setFetch(res.data)
       })
       .catch(err => {
         console.log(err)
       })    
   },[])
+
+  //document.querySelector('body').removeAttribute('class');
+  document.querySelector('body').classList.add('modern')
+  
+  
   console.log(fetch)
   return (
     <div className="App">
-      <img src="https://ghchart.rshah.org/Broast42" alt="Broast42's Github chart" />
-      <div className="">Test text to test some stuff</div>
-      
+      <BioBox data={fetch}/>
     </div>
   );
 }

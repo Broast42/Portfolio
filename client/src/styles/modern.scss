@@ -1,0 +1,31 @@
+.modern{
+    background: $modern-dark;
+    
+    .bio-themed{
+        background: $modern-neutral;
+        //border-radius: 20px;
+        border-top: 4px solid $modern-secondary;
+        border-bottom: 4px solid $modern-secondary;
+        color: $modern-light;
+        
+
+        h1{
+            color: $modern-primary;
+            font-family: $font-sharp;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        .gitlink-themed{
+            color: $modern-primary;
+            font-family: $font-sans;
+        }
+
+        .graph-themed{
+            background-color: white;
+    
+        }
+
+    
+    }
+    
+}
