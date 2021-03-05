@@ -1,0 +1,47 @@
+.modern{
+    background: $modern-dark;
+    
+    .bio-themed{
+        background: $modern-neutral;
+        border-top: 4px solid $modern-secondary;
+        border-bottom: 4px solid $modern-secondary;
+        color: $modern-light;
+        
+
+        h1{
+            color: $modern-primary;
+            font-family: $font-sharp;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        .gitlink-themed{
+            color: $modern-primary;
+            font-family: $font-sharp;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .graph-themed{
+            background-color: #ffffff;
+            box-shadow: 1px 1px 2px #000000;
+    
+        }
+
+        .socal-themed{
+           background: #ffffff;
+           border-radius: 25px;
+           margin-top: 8px;
+           padding-bottom: 8px;
+           font-family: $font-sharp;
+           box-shadow: 1px 1px 2px #000000;
+        }
+
+        .skill-name-themed{
+            font-family: $font-sans;
+            font-size: $text-medium;
+            
+        }
+
+    
+    }
+    
+}

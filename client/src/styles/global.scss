@@ -1,0 +1,182 @@
+h1{
+    font-size: $text-xxlarge;
+}
+
+h2{
+    font-size: $text-xlarge;
+}
+
+h3{
+    font-size: $text-large;
+}
+
+h4{
+    font-size: $text-medium;
+}
+
+h5{
+    font-size: $text-norm;
+}
+
+h6{
+    font-size: $text-small;
+}
+
+.html{
+    color: $html;
+}
+
+.css{
+    color: $css;
+}
+
+.javascript{
+    color: $js;
+}
+
+.node{
+    color: $node;
+}
+
+.python{
+    color: $py;
+}
+
+.react{
+    color: $react;
+}
+
+.npm{
+    color: $npm;
+}
+
+.github{
+    color: $github;
+}
+
+.less{
+    color: $less;
+}
+
+.sass{
+    color: $sass;
+}
+
+.sql{
+    color: $sql;
+}
+
+.bio-box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $small-pc) {
+        flex-direction: column;
+    }
+
+    .info-box{
+        padding: 10px;
+        width: 365px;
+        text-align: center;
+        // border: 1px solid grey;
+        img{
+            margin-top: 10px;;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        p{
+            margin-top: 8px;;
+        }
+        
+        .github-link{
+            font-size: $text-large;
+            
+        }
+
+        .github-icon{
+            font-size: $text-xxlarge;
+        }
+
+        .bio{
+            font-size: $text-medium;
+        }
+
+        .location{
+            font-size: $text-norm;
+        }
+
+        .socal-links{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: $text-norm;
+            color: $modern-secondary;
+            
+        }
+
+        .twitter{
+            color: $twitter;
+            font-size: $text-medium;
+            text-shadow: 1px 1px #000000;
+        }
+
+        .linkedin{
+            color: $linkedin;
+            font-size: $text-medium;
+            text-shadow: 1px 1px #000000;
+        }
+    }
+
+    .stat-box{
+        //align-self: center;
+        padding: 20px;
+        max-width: 640px;
+
+        .contributions{
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            img{
+                height: 90px;
+            }
+
+            @media (max-width: $tablet) {
+                img{
+                    height: 60px;
+                }
+            }
+        }
+
+        .stats{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: $text-norm;
+        }
+
+        .skills{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-size: $text-xxxlarge;
+
+            div{
+                padding:10px;
+                text-align: center;
+            }
+
+            // p{
+            //     font-size: $text-norm;
+            // }
+
+            // p{
+            //     margin: 10px
+            // }
+        }
+
+    }
+
+}
