@@ -22,7 +22,49 @@ h6{
     font-size: $text-small;
 }
 
+.html{
+    color: $html;
+}
 
+.css{
+    color: $css;
+}
+
+.javascript{
+    color: $js;
+}
+
+.node{
+    color: $node;
+}
+
+.python{
+    color: $py;
+}
+
+.react{
+    color: $react;
+}
+
+.npm{
+    color: $npm;
+}
+
+.github{
+    color: $github;
+}
+
+.less{
+    color: $less;
+}
+
+.sass{
+    color: $sass;
+}
+
+.sql{
+    color: $sql;
+}
 
 .bio-box{
     margin-top: 40px;
@@ -51,7 +93,11 @@ h6{
         
         .github-link{
             font-size: $text-large;
-            ;
+            
+        }
+
+        .github-icon{
+            font-size: $text-xxlarge;
         }
 
         .bio{
@@ -65,6 +111,21 @@ h6{
         .socal-links{
             display: flex;
             justify-content: space-evenly;
+            font-size: $text-norm;
+            color: $modern-secondary;
+            
+        }
+
+        .twitter{
+            color: $twitter;
+            font-size: $text-medium;
+            text-shadow: 1px 1px #000000;
+        }
+
+        .linkedin{
+            color: $linkedin;
+            font-size: $text-medium;
+            text-shadow: 1px 1px #000000;
         }
     }
 
@@ -107,9 +168,9 @@ h6{
                 text-align: center;
             }
 
-            p{
-                font-size: $text-norm;
-            }
+            // p{
+            //     font-size: $text-norm;
+            // }
 
             // p{
             //     margin: 10px

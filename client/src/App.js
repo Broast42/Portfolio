@@ -7,6 +7,7 @@ import axios from 'axios'
 function App() {
 
   const [fetch, setFetch] = useState('')
+  const graphcolor= '29648a';
 
   useEffect(()=>{
     axios
@@ -26,7 +27,7 @@ function App() {
   console.log(fetch)
   return (
     <div className="App">
-      <BioBox data={fetch}/>
+      <BioBox data={fetch} graphcolor={graphcolor}/>
     </div>
   );
 }

@@ -4,57 +4,57 @@ const skills = [
     {
         icon: faHtml5,
         name: 'HTML',
-        color: 'red',
+        color: 'html',
     },
     {
         icon: faCss3Alt,
         name: "CSS",
-        color: 'red',
+        color: 'css',
     },
     {
         icon: faJsSquare,
         name: "JavaScript",
-        color: 'red',
-    },
-    {
-        icon: faNodeJs,
-        name: "Node",
-        color: 'red',
-    },
-    {
-        icon: faPython,
-        name: "Python",
-        color: 'red',
+        color: 'javascript',
     },
     {
         icon: faReact,
         name: "React",
-        color: 'red',
+        color: 'react',
+    },
+    {
+        icon: faNodeJs,
+        name: "Node",
+        color: 'node',
+    },
+    {
+        icon: faPython,
+        name: "Python",
+        color: 'python',
     },
     {
         icon: faNpm,
         name: "NPM",
-        color: 'red',
+        color: 'npm',
     },
     {
         icon: faGithub,
         name: "GitHub",
-        color: 'red',
+        color: 'github',
     },
     {
         icon: faLess,
         name: "Less",
-        color: 'red',
+        color: 'less',
     },
     {
         icon: faSass,
         name: "Sass",
-        color: 'red',
+        color: 'sass',
     },
     {
         icon: faDatabase,
         name: "SQL",
-        color: 'red',
+        color: 'sql',
     }
 ]
 
