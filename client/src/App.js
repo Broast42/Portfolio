@@ -1,5 +1,6 @@
 import './styles/styles.scss'
 import BioBox from './components/HomePage/BioBox';
+import Skills from './components/HomePage/Skills';
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -28,6 +29,12 @@ function App() {
   return (
     <div className="App">
       <BioBox data={fetch} graphcolor={graphcolor}/>
+      <Skills />
+      
+    
+    
+    
+    
     </div>
   );
 }
