@@ -1,12 +1,13 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import {skills} from '../../DyData';
+import { longBio } from "../../DyData";
 
 const BioBox = (props) => {
     const data = props.data;
     const graphcolor = props.graphcolor;
     return (
+    
         <div className="bio-box bio-themed">
             <div className="info-box">
                 <h1>{data.name}</h1>
@@ -45,9 +46,8 @@ const BioBox = (props) => {
                         <p>Following:{data.following}</p>
                     </div>
                 </div>
-                <div className="skills">
-                    {/* <p>test</p>
-                    <FontAwesomeIcon icon={skills[0].icon}/> */}
+                {/* <div className="skills">
+        
                     {skills.map((x, index) => (
                         <div key={index} className={x.color}>
                             <FontAwesomeIcon   icon={x.icon} />
@@ -56,11 +56,17 @@ const BioBox = (props) => {
                     ))}
                     
                     
+                </div> */}
+                <div className="long-bio">
+                    <p>
+                        {longBio}
+                    </p>
                 </div>
                
             </div>
             
         </div>
+    
     )
 }
 
