@@ -66,8 +66,12 @@ h6{
     color: $sql;
 }
 
+.hide{
+    display: none;
+}
+
 .bio-box{
-    margin-top: 40px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,11 +200,14 @@ h6{
     font-size: $text-large;
     margin-top: 15px;
     text-align: center;
+    @media (max-width: $tablet) {
+        font-size: $text-norm;
+    }
+    @media (max-width: $phone) {
+        font-size: $text-small;
+    }
 }
 
-.icon-container{
-    height: 65px;
-}
 
 .skills{
     margin-top: 10px;
@@ -212,6 +219,7 @@ h6{
     .skill-item{
         position: relative;
         width: 97px;
+        height: 70px;
         padding:10px;
         text-align: center;
         
@@ -240,5 +248,17 @@ h6{
             display: block;
             
         }
+    }
+}
+
+.profile-change{
+    //margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    p{
+        margin-top: 5px;
+        margin-left: 10px;
+        // width: 220px;
+        font-size: $text-small;
     }
 }
