@@ -59,4 +59,29 @@
             color: $modern-light;
         }
     }
+
+    .change-theme-themed{
+        color: $modern-primary;
+        font-family: $font-sharp;
+
+    }
+
+    .vote-theme-themed{
+        button{
+            background: $modern-primary;
+            border-radius: 20px;
+            border: 1px solid $modern-secondary;
+
+            &:hover{
+                background: $modern-secondary;
+                border: 1px solid $modern-primary;
+                color: $modern-light;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+
 }

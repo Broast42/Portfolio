@@ -11,7 +11,7 @@ const ChangeProfile = (props) => {
                 </form>   
             </div>
             <div>
-                <p>Type in your GitHub username to change the profile bellow</p>
+                <p>Type in your GitHub username to change the profile card bellow</p>
             </div>    
         </div>
     )

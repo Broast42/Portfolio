@@ -225,13 +225,6 @@ h6{
         
     }
 
-    // p{
-    //     font-size: $text-norm;
-    // }
-
-    // p{
-    //     margin: 10px
-    // }
 }
 
 .hover-show{
@@ -260,5 +253,42 @@ h6{
         margin-left: 10px;
         // width: 220px;
         font-size: $text-small;
+    }
+}
+
+.theme-ui{
+    display:flex;
+    justify-content: space-around;
+}
+
+.change-theme{
+    font-size: $text-xlarge;
+    padding-left: 10px;
+    display:flex;
+
+    p{
+        margin-right: 15px;
+    }
+
+    select{
+        margin-top: 6px;
+        width: 90px;
+        height: 25px;
+    }
+}
+
+.vote-theme{
+    display: flex;
+    font-size: $text-norm;
+    color: $modern-light;
+    padding-top: 4px;
+
+    p{
+        margin-right: 15px;
+        padding-top: 4px;
+    }
+
+    button{
+        height: 25px;
     }
 }
