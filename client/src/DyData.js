@@ -47,7 +47,7 @@ const skills = [
         icon: faNpm,
         name: "NPM",
         color: 'npm',
-        descript: 'Regularly make use of node pagage manager and CLI',
+        descript: 'Regularly make use of npm and CLI',
     },
     {
         icon: faGithub,
