@@ -4,8 +4,8 @@ import { faTwitter, faLinkedinIn, faGithubSquare } from "@fortawesome/free-brand
 import { longBio } from "../../DyData";
 
 const BioBox = (props) => {
-    const data = props.data;
-    const graphcolor = props.graphcolor;
+    const {data, graphcolor, profile} = props;
+    
     return (
     
         <div className="bio-box bio-themed">
@@ -21,24 +21,35 @@ const BioBox = (props) => {
                 <p className="bio">{data.bio}</p>
                 <p className="location">{data.location}</p>
                 <div className="socal-links socal-themed">
-                    <p> 
-                        <a href={`http://twitter.com/${data.twitter_username}`}>
-                            <FontAwesomeIcon className="twitter" icon={faTwitter} /> 
-                            {" "}@{data.twitter_username}
-                        </a>
-                    </p>
-                    <p >
-                        <a href="http://linkedin.com/in/rjarrettdowd">
-                            <FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
-                            {" "}rjarrettdowd
-                        </a>
-                    </p>
+                    {data.twitter_username === null ?
+                        null
+                    :
+                        <p> 
+                            <a href={`http://twitter.com/${data.twitter_username}`}>
+                                <FontAwesomeIcon className="twitter" icon={faTwitter} /> 
+                                {" "}@{data.twitter_username}
+                            </a>
+                        </p>
+                    }
+                    
+                    {profile === 'Broast42' ? 
+                        <p>
+                            <a href="http://linkedin.com/in/rjarrettdowd">
+                                <FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
+                                {" "}rjarrettdowd
+                            </a>
+                        </p>
+                    :
+                        null
+                    }
+                    
                 </div>
             </div>
             <div className="stat-box">
+                
                 <div>
                     <div className="contributions graph-themed">
-                        <img src={`https://ghchart.rshah.org/${graphcolor}/Broast42`} alt="Broast42's Github chart" />
+                        <img src={`https://ghchart.rshah.org/${graphcolor}/${profile}`} alt={`${profile} Github chart`} />
                     </div>
                     <div className='stats'>
                         <p>Public Repos: {data.public_repos}</p>
@@ -46,22 +57,16 @@ const BioBox = (props) => {
                         <p>Following:{data.following}</p>
                     </div>
                 </div>
-                {/* <div className="skills">
-        
-                    {skills.map((x, index) => (
-                        <div key={index} className={x.color}>
-                            <FontAwesomeIcon   icon={x.icon} />
-                            <p className="skill-name-themed">{x.name}</p>
-                        </div>
-                    ))}
-                    
-                    
-                </div> */}
-                <div className="long-bio">
-                    <p>
-                        {longBio}
-                    </p>
-                </div>
+                {profile === 'Broast42' ?
+                    <div className="long-bio">
+                        <p>
+                            {longBio}
+                        </p>
+                    </div>
+                :
+                    null
+                }
+                
                
             </div>
             

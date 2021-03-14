@@ -41,7 +41,7 @@ const skills = [
         icon: faDatabase,
         name: "SQL",
         color: 'sql',
-        descript: 'Skilled with SQL and Relational Databases including PostgreSQL using Knex.js',
+        descript: 'Skilled with Relational Databases including PostgreSQL',
     },
     {
         icon: faNpm,
