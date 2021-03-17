@@ -4,19 +4,20 @@ import {skills} from '../../DyData';
 
 const Skills = () => {
 
-    const [skillDescript, setSkillDescript] = useState('My Skills');
+    const [skillDescript, setSkillDescript] = useState('');
 
     return(
         <div>
             <div className="skill-descript skill-descript-themed">
-                {skillDescript}
+                <p>My Skills</p>
+                <p className="skill-descript-container">{skillDescript}</p>
             </div>
             
             <div className="skills">
             
                 {skills.map((x, index) => (
                     
-                    <div key={index} className={`${x.color} skill-item`} onMouseEnter={() => setSkillDescript(x.descript)} onMouseLeave={() => setSkillDescript("My Skills")}>
+                    <div key={index} className={`${x.color} skill-item`} onMouseEnter={() => setSkillDescript(x.descript)} onMouseLeave={() => setSkillDescript(" ")}>
                         <div className="icon-hover">
                             <FontAwesomeIcon   icon={x.icon} />
                             <p className="skill-name-themed hover-show">{x.name} </p>
