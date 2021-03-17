@@ -198,7 +198,7 @@ h6{
 
 .skill-descript{
     font-size: $text-large;
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
     @media (max-width: $tablet) {
         font-size: $text-norm;
@@ -206,6 +206,20 @@ h6{
     @media (max-width: $phone) {
         font-size: $text-small;
     }
+}
+
+.skill-descript-container{
+    height: 20px;
+    color: $modern-light;
+    padding: 5px;
+    font-size: $text-medium;
+    @media (max-width: $tablet) {
+        height: 45;
+        font-size: $text-norm;
+    }
+    // @media (max-width: $phone) {
+    //     font-size: $text-small;
+    // }
 }
 
 
@@ -259,6 +273,12 @@ h6{
 .theme-ui{
     display:flex;
     justify-content: space-around;
+
+    @media (max-width: $tablet) { 
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
 }
 
 .change-theme{
@@ -282,13 +302,151 @@ h6{
     font-size: $text-norm;
     color: $modern-light;
     padding-top: 4px;
+    
+    @media (max-width: $tablet) { 
+        margin-top: 10px;
+    }
 
     p{
         margin-right: 15px;
+        margin-left: 10px;
         padding-top: 4px;
     }
 
     button{
-        height: 25px;
+        min-height: 25px;
     }
+}
+
+.projects{
+    margin: 40px 0px 20px 20px;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.project-card{
+    margin: 20px;
+    padding: 10px;
+    width: 550px;
+    min-height: 250px;
+
+    @media (max-width: $phone) { 
+        width: 360px;
+    
+    }
+    
+    .project-card-title{
+        display: flex;
+        justify-content: center;
+
+        .logo-link{
+            align-self: center;
+            font-size: $text-xxlarge;
+            @media (max-width: $phone) { 
+                font-size: $text-large;
+            
+            }
+        }
+    }
+
+    img{
+        height: 75px;
+        margin-right: 20px;;
+        @media (max-width: $phone) { 
+           height: 50px
+        
+        }
+    
+    }
+    
+    .project-descript-full{
+        font-size: $text-norm;
+        font-family: $font-sans;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .project-descript{
+        font-size: $text-small;
+        @media (max-width: $phone) { 
+           font-size: 1.2rem;
+        
+        }
+
+        p{
+            margin-top: 3px;
+        }
+    }
+
+    .project-link{
+        font-size: $text-medium;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.carpet-advantage{
+    font-family: $font-calogo;
+    color: #00328E;
+    text-shadow: 1px 1px #a5a500;
+
+    &:hover{
+        color: #a5a500;
+        text-shadow: 1px 1px #00328e;
+    }
+    
+}
+
+.ca-link{
+    color: #00328E;
+    text-shadow: 1px 1px #000000;
+    &:hover{
+        color: #a5a500;
+    } 
+}
+
+.conway{
+    font-family: $font-serif;
+    font-weight: bolder;
+    margin: 10px 0px;
+    color: #6000fc;
+    text-shadow: 1px 1px #000000;
+
+    &:hover{
+        color: $modern-light;
+        text-shadow: 1px 1px #6000fc;
+    }
+    
+}
+
+.conway-link{
+    color: $modern-light;
+    text-shadow: 1px 1px #000000;
+    &:hover{
+        color: #6000fc;
+    } 
+}
+
+.celeb{
+    font-family: $font-sans;
+    font-weight: bolder;
+    margin: 10px 0px;
+    color: #cd8c00;
+    text-shadow: 1px 1px #000000;
+
+    &:hover{
+        color: #fafcda;
+        text-shadow: 1px 1px #cd8c00;
+    }
+    
+}
+
+.celeb-link{
+    color: #fafcda;
+    text-shadow: 1px 1px #000000;
+    &:hover{
+        color: #cd8c00;
+    } 
 }

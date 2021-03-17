@@ -3,8 +3,10 @@ import BioBox from './components/HomePage/BioBox';
 import Skills from './components/HomePage/Skills';
 import ChangeProfile from './components/HomePage/ChangeProfile';
 import ThemeUI from './components/HomePage/ThemeUI';
+import Projects from './components/HomePage/Projects';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+
 
 
 function App() {
@@ -52,7 +54,7 @@ function App() {
       />
       <Skills />
       <ThemeUI/>
-    
+      <Projects />
     
     
     
